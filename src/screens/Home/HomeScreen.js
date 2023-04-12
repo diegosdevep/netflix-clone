@@ -7,11 +7,13 @@ import { styles } from './home.styles';
 
 const HomeScreen = () => {
   return (
-    <ScrollView style={styles.container}>
-      <Header />
-      <Trending />
-      <MovieRows />
-    </ScrollView>
+    <SafeAreaView style={styles.container}>
+      <ScrollView>
+        <Header />
+        <Trending />
+        <MovieRows />
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
